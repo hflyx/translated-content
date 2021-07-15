@@ -48,7 +48,7 @@ translation_of: Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 
 <h2 id="描述">描述</h2>
 
-<p>该方法允许精确地添加或修改对象的属性。通过赋值操作添加的普通属性是可枚举的，在枚举对象属性时会被枚举到（{{jsxref("Statements/for...in", "for...in")}} 或 {{jsxref("Object.keys")}}<a href="/en-US/docs/JavaScript/Reference/Global_Objects/Object/keys"> </a>方法），可以改变这些属性的值，也可以{{jsxref("Operators/delete", "删除")}}这些属性。这个方法允许修改默认的额外选项（或配置）。默认情况下，使用 <code>Object.defineProperty()</code> 添加的属性值是不可修改（immutable）的。</p>
+<p>该方法允许精确地添加或修改对象的属性。通过赋值操作添加的普通属性是可枚举的，在枚举对象属性时会被枚举到（{{jsxref("Statements/for...in", "for...in")}} 或 {{jsxref("Object.keys")}}<a href="/en-US/docs/JavaScript/Reference/Global_Objects/Object/keys"> </a>方法），可以改变这些属性的值，也可以{{jsxref("Operators/delete", "删除")}}这些属性。这个方法允许修改默认的额外选项（或配置）。默认情况下，使用 <code>Object.defineProperty()</code> 添加的属性值是不可修改和不可枚举的。</p>
 
 <p>对象里目前存在的属性描述符有两种主要形式：<em>数据描述符</em>和<em>存取描述符</em>。<em>数据描述符</em>是一个具有值的属性，该值可以是可写的，也可以是不可写的。<em>存取描述符</em>是由 getter 函数和 setter 函数所描述的属性。一个描述符只能是这两者其中之一；不能同时是两者。</p>
 
